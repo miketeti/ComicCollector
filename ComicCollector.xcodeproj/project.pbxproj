@@ -13,6 +13,8 @@
 		779876BC1F0D7CF500E41434 /* ComicCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 779876BA1F0D7CF500E41434 /* ComicCollector.xcdatamodeld */; };
 		779876BE1F0D7CF500E41434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779876BD1F0D7CF500E41434 /* Assets.xcassets */; };
 		779876C11F0D7CF500E41434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779876BF1F0D7CF500E41434 /* LaunchScreen.storyboard */; };
+		779876C91F0EA96500E41434 /* Amazing_Fantasy_Vol_1_15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 779876C81F0EA96500E41434 /* Amazing_Fantasy_Vol_1_15.jpg */; };
+		779876CB1F0EAA7500E41434 /* ComicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779876CA1F0EAA7500E41434 /* ComicViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		779876BD1F0D7CF500E41434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		779876C01F0D7CF500E41434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		779876C21F0D7CF500E41434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		779876C81F0EA96500E41434 /* Amazing_Fantasy_Vol_1_15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Amazing_Fantasy_Vol_1_15.jpg; sourceTree = "<group>"; };
+		779876CA1F0EAA7500E41434 /* ComicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		779876B21F0D7CF500E41434 /* ComicCollector */ = {
 			isa = PBXGroup;
 			children = (
+				779876C81F0EA96500E41434 /* Amazing_Fantasy_Vol_1_15.jpg */,
 				779876B31F0D7CF500E41434 /* AppDelegate.swift */,
 				779876B51F0D7CF500E41434 /* ViewController.swift */,
+				779876CA1F0EAA7500E41434 /* ComicViewController.swift */,
 				779876B71F0D7CF500E41434 /* Main.storyboard */,
 				779876BD1F0D7CF500E41434 /* Assets.xcassets */,
 				779876BF1F0D7CF500E41434 /* LaunchScreen.storyboard */,
@@ -127,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				779876C91F0EA96500E41434 /* Amazing_Fantasy_Vol_1_15.jpg in Resources */,
 				779876C11F0D7CF500E41434 /* LaunchScreen.storyboard in Resources */,
 				779876BE1F0D7CF500E41434 /* Assets.xcassets in Resources */,
 				779876B91F0D7CF500E41434 /* Main.storyboard in Resources */,
@@ -142,6 +149,7 @@
 			files = (
 				779876BC1F0D7CF500E41434 /* ComicCollector.xcdatamodeld in Sources */,
 				779876B61F0D7CF500E41434 /* ViewController.swift in Sources */,
+				779876CB1F0EAA7500E41434 /* ComicViewController.swift in Sources */,
 				779876B41F0D7CF500E41434 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

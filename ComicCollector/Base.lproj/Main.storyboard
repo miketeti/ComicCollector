@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="137.18140929535232"/>
         </scene>
-        <!--View Controller-->
+        <!--Comic View Controller-->
         <scene sceneID="Pqc-Lm-dfG">
             <objects>
-                <viewController id="VqJ-zp-Cby" sceneMemberID="viewController">
+                <viewController id="VqJ-zp-Cby" customClass="ComicViewController" customModule="ComicCollector" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TpR-HT-v6J"/>
                         <viewControllerLayoutGuide type="bottom" id="ZnH-At-tup"/>
@@ -48,10 +48,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CsU-HA-fB7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Amazing_Fantasy_Vol_1_15.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CsU-HA-fB7">
                                 <rect key="frame" x="48" y="84" width="280" height="350"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0cP-0C-HuE">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0cP-0C-HuE">
                                 <rect key="frame" x="48" y="461" width="280" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -60,6 +60,9 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFL-MB-7B7">
                                 <rect key="frame" x="173" y="519" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="VqJ-zp-Cby" eventType="touchUpInside" id="498-n8-QzN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -77,10 +80,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="7El-7J-DLh">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="8ak-JC-oDA"/>
-                            <barButtonItem title="Photos" id="dac-Fa-Q5Q"/>
+                            <barButtonItem systemItem="camera" id="8ak-JC-oDA">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="VqJ-zp-Cby" id="rDk-FI-ugI"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Photos" id="dac-Fa-Q5Q">
+                                <connections>
+                                    <action selector="photosTapped:" destination="VqJ-zp-Cby" id="vSp-nr-GJ7"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="comicImageView" destination="CsU-HA-fB7" id="UEv-8O-TpJ"/>
+                        <outlet property="titleTextField" destination="0cP-0C-HuE" id="6FW-sF-W8l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Udc-bE-2d1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,4 +120,7 @@
             <point key="canvasLocation" x="133.59999999999999" y="791.15442278860576"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Amazing_Fantasy_Vol_1_15.jpg" width="609" height="903"/>
+    </resources>
 </document>
