@@ -44,7 +44,9 @@ class ComicViewController: UIViewController,UIImagePickerControllerDelegate,UINa
         let context = (UIApplication.shared.delegate as! AppDelegate)
         let comic = Comic(context: context.persistentContainer.viewContext)
         comic.title = titleTextField.text
-        comic.image = UIImageJPEGRepresentation(comicImageView.image!, 0.0) as NSData?
+        //comic.image = UIImageJPEGRepresentation(comicImageView.image!, 0.0) as NSData?
+        comic.image = UIImagePNGRepresentation(comicImageView.image!) as NSData?
         context.saveContext()
+        navigationController?.popViewController(animated: true)
     }
 }
