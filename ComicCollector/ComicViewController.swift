@@ -41,5 +41,10 @@ class ComicViewController: UIViewController,UIImagePickerControllerDelegate,UINa
     @IBAction func cameraTapped(_ sender: Any) {
     }
     @IBAction func addTapped(_ sender: Any) {
+        let context = (UIApplication.shared.delegate as! AppDelegate)
+        let comic = Comic(context: context.persistentContainer.viewContext)
+        comic.title = titleTextField.text
+        comic.image = UIImageJPEGRepresentation(comicImageView.image!, 0.0) as NSData?
+        context.saveContext()
     }
 }

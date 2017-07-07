@@ -75,7 +75,7 @@
                             <constraint firstItem="CsU-HA-fB7" firstAttribute="leading" secondItem="0cP-0C-HuE" secondAttribute="leading" id="a8G-H4-ZVy"/>
                             <constraint firstItem="CsU-HA-fB7" firstAttribute="top" secondItem="TpR-HT-v6J" secondAttribute="bottom" constant="20" id="cm4-7U-7mY"/>
                             <constraint firstItem="CsU-HA-fB7" firstAttribute="centerX" secondItem="HWm-Ay-XTi" secondAttribute="centerX" id="rXS-it-39T"/>
-                            <constraint firstItem="jFL-MB-7B7" firstAttribute="top" secondItem="0cP-0C-HuE" secondAttribute="bottom" constant="50" id="rwS-ZT-TdW"/>
+                            <constraint firstItem="jFL-MB-7B7" firstAttribute="top" secondItem="0cP-0C-HuE" secondAttribute="bottom" constant="28" id="rwS-ZT-TdW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7El-7J-DLh">
